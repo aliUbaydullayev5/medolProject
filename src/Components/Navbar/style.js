@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import { push as Menu } from 'react-burger-menu'
 
 const Main = styled.div`
+  margin: 0 auto !important;
   height: 200px;
   width: 100% !important;
   display: flex;
@@ -21,6 +22,7 @@ const Main = styled.div`
 `
 
 const Container = styled.div`
+  max-width: var(--mainWidth);
   height: 200px;
   display: grid;
 `
@@ -33,22 +35,20 @@ Container.Top = styled.div`
     width: 100% !important;
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
     grid-template-rows: 1fr 1fr !important;
-    border: 1px solid red;
   }
 
 `
 const Column = styled.div`
   display: flex;
   justify-content: ${({between})=> between ? 'space-around' : 'center'};
-  
-  grid-row: ${({row})=> row && row};
-  grid-column: ${({column})=> column && column};
   align-items: center;
   gap: 5px; 
   padding: ${({padding})=> padding ? padding : '0'};
   @media screen and (max-width: 500px){
     padding: 0px !important;
     gap: 3px !important;
+    grid-row: ${({row})=> row && row};
+    grid-column: ${({column})=> column && column};
   }
 `
 const Round = styled.div`
@@ -62,20 +62,18 @@ const Round = styled.div`
   cursor: pointer;
   gap: 5px;
   @media screen and (max-width: 1100px){
-    width: 30px !important;
+    width: 50px !important;
     p{
       display: none;
     }
-    img{
-      
-    }
   }
-    >p{
+  >p{
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     text-align: center;
     color: #0D4C93;
+    margin-top: 10px;
   }
   span{
     font-weight: 600;

@@ -31,6 +31,7 @@ a{
 :root{
   --mainPadding: 200px;
   --topPadding: 200px;
+  --mainWidth: 1440px;
 }
 @media screen and (max-width: 1100px){
   :root{
@@ -45,4 +46,18 @@ a{
 }
 .bm-cross-button span span{
   width: 6px !important;
+}
+
+.slick-dots>li>button{
+  border: 1px solid red !important;
+  width: 25px !important;
+  height: 25px !important;
+  background: #00C9C9 !important;
+  border-radius: 250px !important;
+}
+.slick-dots-bottom>li>button{
+  border: 1px solid #036262 !important;
+}
+.slick-dots>li{
+  margin: 0 8px !important;
 }

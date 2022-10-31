@@ -37,7 +37,7 @@ const Navbar = () => {
             position: 'fixed',
             height: '100%',
             left: '0',
-            top: '110px'
+            top: '140px'
         },
         bmMenu: {
             background: 'rgb(56,56,56)',

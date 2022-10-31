@@ -2,6 +2,7 @@ import React from 'react'
 import {Route, Routes} from "react-router-dom";
 import AboutPage from "../Pages/AboutPage";
 import Navbar from "../Components/Navbar";
+import 'antd/dist/antd.css';
 
 const Root = () => {
     return(
