@@ -21,6 +21,7 @@ const Production = () => {
                         </Products.Block>
                     ))}
                 </Products>
+                <Products.BottomLink className={'nocopy'} >Перейти в каталог нашей продукции <span>➤</span></Products.BottomLink>
             </Container.Inset>
         </Container>
     )

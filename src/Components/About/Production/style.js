@@ -23,6 +23,7 @@ const Products = styled.div`
   grid-template-rows: 1fr 1fr;
   grid-gap: 60px;
   padding: 62px 0 0 0;
+  margin-bottom: 50px;
   @media screen and (max-width: 500px){
     grid-template-columns: 1fr;
     padding: 62px 6px 0 6px;
@@ -57,6 +58,17 @@ Products.Title = styled.div`
   color: #000000;
   display: flex;
   justify-content: center;
+`
+Products.BottomLink = styled.div`
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #0D4C93;
+  text-align: center;
+  >span{
+    font-size: 28px;
+  }
+  cursor: pointer;
 `
 
 export {Container, Products}
