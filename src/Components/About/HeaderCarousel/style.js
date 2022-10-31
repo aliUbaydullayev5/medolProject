@@ -76,7 +76,7 @@ CarouselBlock.Sections = styled.div`
 CarouselBlock.Left = styled.div`
   padding-top: 40px;
   @media screen and (max-width: 500px){
-    padding: 0 10px;
+    padding: 4px 10px;
   }
 
 `
