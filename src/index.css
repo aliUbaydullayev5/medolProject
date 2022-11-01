@@ -33,9 +33,15 @@ a{
   --topPadding: 200px;
   --mainWidth: 1440px;
 }
+@media screen and (max-width: 1300px){
+  :root{
+    --mainPadding: 10px !important;
+    --topPadding: 200px !important;
+  }
+}
 @media screen and (max-width: 1100px){
   :root{
-    --mainPadding: 0px !important;
+    --mainPadding: 10px !important;
     --topPadding: 200px !important;
   }
 }
@@ -60,4 +66,46 @@ a{
 }
 .slick-dots>li{
   margin: 0 8px !important;
+}
+.alice-carousel__dots{
+  display: none !important;
+}
+
+.alice-carousel__prev-btn{
+  width: 50px !important;
+  height: 50px !important;
+  background: linear-gradient(180deg, #0D4C93 0%, #00C9C9 100%) !important;
+  border-radius: 25px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  top: 40%;
+  left: -25px;
+}
+.alice-carousel__next-btn{
+  width: 50px !important;
+  height: 50px !important;
+  background: linear-gradient(180deg, #0D4C93 0%, #00C9C9 100%) !important;
+  border-radius: 25px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  top: 40%;
+  right: -25px;
+
+}
+
+.alice-carousel__prev-btn-item{
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 25px;
+  color: #fff !important;
+}
+.alice-carousel__next-btn-item{
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 25px;
+  color: #fff !important;
 }

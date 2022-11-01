@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const Block = styled.button`
   margin: ${({margin})=> margin && margin};
-  width: 270px;
-  height: 70px;
+  width: 250px;
+  height: 50px;
   background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
   opacity: 0.9;
   border-radius: 35px;

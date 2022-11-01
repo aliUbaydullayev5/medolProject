@@ -22,7 +22,7 @@ Container.Title = styled.div`
 `
 
 Container.Main = styled.div`
-  padding: 78px 0 112px 0;
+  padding: 78px var(--mainPadding) 112px var(--mainPadding);
   background-image: url(${imgBack});
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ Container.Main = styled.div`
   
 `
 Container.MainInset = styled.div`
-  max-width: var(--mainWidth);
+  max-width: var(--mainWidth) !important;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -53,6 +53,7 @@ Container.SectionImg = styled.div`
   background-image: url(${({imgUrl}) => imgUrl && imgUrl});
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 50px 50px 0 0;
 `
 
 Container.SectionTitle = styled.div`
@@ -79,8 +80,11 @@ Container.SectionButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: end;
+  position: relative;
+
   >button{
-    margin-bottom: -35px;
+    position: absolute;
+    bottom: -35px;
   }
 `
 
