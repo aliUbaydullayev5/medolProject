@@ -26,7 +26,7 @@ const textFunc = (type) => {
 
 const Container = styled.div`
   width: 100%;
-  min-height: 472px;
+  min-height: 370px;
   background-image: url(${backImg});
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,15 +40,21 @@ Container.Inset = styled.div`
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
   padding: 28px 0;
   @media screen and (max-width: 800px){
     grid-template-columns: 1fr;
+    grid-column-gap: 0px;
   }
   
 `
 Container.LeftColumn = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
+  grid-row-gap: 30px;
+  @media screen and (max-width: 800px){
+    grid-row-gap: 20px;
+  }
 `
 
 Container.RightColumnTop = styled.div`
